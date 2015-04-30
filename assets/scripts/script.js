@@ -22,6 +22,8 @@ $(function() {
     $("#ToDo").on("click", ".completion-button", closeItem);
 
     $("#Complete").on("click", ".completion-button", openItem);
+
+    $(".list").on("click", ".delete-button", deleteItem);
 });
 
 /**

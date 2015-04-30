@@ -11,6 +11,15 @@ $(function() {
     console.log( "ready!" );
 
     $(".add-button").on("click", addNewItem);
+
+    $('#todo-input').keypress(function (e) {
+        if (e.which == 13) {
+            addNewItem();
+
+            return false;
+        }
+    });
+
     $("#ToDo").on("click", ".completion-button", deleteItem);
 });
 

@@ -10,15 +10,15 @@
 $(function() {
     console.log( "ready!" );
 
-    $(".add-button").on("click", addItem);
+    $(".add-button").on("click", addNewItem);
+    $("#ToDo").on("click", ".completion-button", deleteItem);
 });
-
 
 /**
  * Adds item to the In Progress list from the input field at the top. Will only add an item if there is one to enter.
  * @param event
  */
-function addItem(event) {
+function addNewItem(event) {
     //console.log(arguments);
 
     // Checks of there is any text in the input and if not then the function will exit.
@@ -42,5 +42,7 @@ function addItem(event) {
 
 
 function deleteItem() {
+    $(this).parent().parent().remove();
 
+    //$(this).parent().children('span').remove();
 }

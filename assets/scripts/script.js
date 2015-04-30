@@ -8,8 +8,6 @@
  * I'm using this to bind my functionality to initial elements on the screen.
  */
 $(function() {
-    console.log( "ready!" );
-
     $(".add-button").on("click", addNewItem);
 
     $('#todo-input').keypress(function (e) {

@@ -15,12 +15,13 @@ $(function() {
     $('#todo-input').keypress(function (e) {
         if (e.which == 13) {
             addNewItem();
-
             return false;
         }
     });
 
-    $("#ToDo").on("click", ".completion-button", deleteItem);
+    $("#ToDo").on("click", ".completion-button", closeItem);
+
+    $("#Complete").on("click", ".completion-button", openItem);
 });
 
 /**
@@ -49,9 +50,16 @@ function addNewItem(event) {
     document.getElementsByName('todo-input')[0].value = '';
 }
 
+function closeItem() {
+    $(this).parent().parent().prependTo('#Complete');
+}
+
+function openItem() {
+    $(this).parent().parent().appendTo('#ToDo');
+}
 
 function deleteItem() {
     $(this).parent().parent().remove();
 
-    //$(this).parent().children('span').remove();
+    //$(this).parent().children('span').remove(); // Removes the spans but leaves the text.
 }

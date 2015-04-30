@@ -27,9 +27,12 @@ function addItem(event) {
     }
 
     // Adds to-do item to the list.
-    $('#InProgress').append(
+    $('#ToDo').append(
         '<li class="todo-item">' +
-            '<div class="item-text">' + document.getElementsByName('todo-input')[0].value + '<span class="edit-button"></span><span class="completion-button"></span></div>' +
+            '<div class="item-text">' +
+                document.getElementsByName('todo-input')[0].value +
+                '<span class="edit-button"></span><span class="completion-button"></span>' +
+            '</div>' +
         '</li>'
     );
 

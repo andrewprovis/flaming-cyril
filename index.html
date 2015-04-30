@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flaming Cyril: To-Do List</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css">
+    <script type="text/javascript" src="/lib/jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/script.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <h1>To do:</h1>
+
+    <div class="list">
+        <h2><input type="text" name="todo-input" placeholder="What needs to be done?"/><span class="add-button">
+                <!--<p>+</p>-->
+            </span></h2>
+
+        <ul id="InProgress" class="todo-items-list">
+            <li class="todo-item">
+                <div class="item-text">Milk<span class="edit-button"></span><span class="completion-button"></span></div>
+            </li>
+            <li class="todo-item">
+                <div class="item-text">Eggs<span class="edit-button"></span><span class="completion-button"></span></div>
+            </li>
+            <li class="todo-item">
+                <div class="item-text">Flour<span class="edit-button"></span><span class="completion-button"></span></div>
+            </li>
+        </ul>
+
+        <ul id="Complete" class="todo-items">
+            <li class="todo-item">
+                <div class="item-text">Bread</div>
+            </li>
+        </ul>
+
+        <div id="list-footer"></div>
+    </div>
+</div>
+</body>
+</html>

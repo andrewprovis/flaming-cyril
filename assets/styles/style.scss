@@ -1,0 +1,114 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+body {
+  background: -webkit-linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #003973 10%, #E5E5BE 90%); /* W3C */
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  margin: 50px auto;
+  width: 500px;
+  text-align: center;
+}
+
+.list {
+  background: #34495E;
+  width: 100%;
+  //height: 500px;
+  border-radius: 0.35rem;
+  //overflow-y: scroll;
+  //overflow-x: hidden;
+}
+
+h2 {
+  background: #B43C52;
+  padding: 1.25rem;
+  color: #FFF;
+  border-top-left-radius: 0.35rem;
+  border-top-right-radius: 0.35rem;
+  text-align: left;
+  margin: 0 0;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #FFF;
+  font-size: 1.3rem;
+  width: 90%;
+}
+
+.add-button {
+  display: inline-block;
+  position: relative;
+  top: 0.3rem;
+  border-radius: 0.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  border: 1px solid white;
+  margin-left: 0.9rem;
+}
+
+//.add-button p {
+//  display: inline-block;
+//  position: relative;
+//  top: -0.25rem;
+//  left: 0.4rem;
+//  color: #B43C52;
+//  margin: 0;
+//  cursor: default;
+//}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.15rem solid #f2f2f2;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+  padding: 1.5rem;
+  transition: all .3s ease;
+  color: #FFF;
+  font-size: 1.25rem;
+}
+
+li:hover {
+  background: #2C3E50;
+}
+
+.completion-button {
+  display: inline-block;
+  border: 1px solid #FFF;
+  border-radius: 0.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  float: right;
+  transition: all .3s ease;
+}
+
+.completion-button:hover {
+  background: #B43C52;
+  border: 1px solid #B43C52;
+}
+
+#list-footer {
+  background: #34495E;
+  height: 0.35rem;
+  border-bottom-left-radius: 0.35rem;
+  border-bottom-right-radius: 0.35rem;
+}

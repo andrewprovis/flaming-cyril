@@ -106,6 +106,21 @@ li:hover {
   border: 1px solid #FFF;
 }
 
+.delete-button {
+  display: inline-block;
+  border: 1px solid orange;
+  border-radius: 0.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  float: right;
+  transition: all .3s ease;
+  margin-right: 1rem;
+}
+
+.delete-button:hover {
+  background: orange;
+}
+
 #Complete li {
   color: #778899;
   text-decoration: line-through;

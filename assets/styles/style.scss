@@ -25,7 +25,7 @@ body {
   //overflow-x: hidden;
 }
 
-h2 {
+#list-header {
   background: #B43C52;
   padding: 1.25rem;
   color: #FFF;
@@ -75,7 +75,7 @@ input[type="text"] {
 ul {
   margin: 0;
   padding: 0;
-  border-bottom: 0.15rem solid #f2f2f2;
+  //border-bottom: 0.15rem solid #f2f2f2;
 }
 
 li {
@@ -102,6 +102,11 @@ li:hover {
 }
 
 .completion-button:hover {
+  background: #B43C52;
+  border: 1px solid #B43C52;
+}
+
+.completion-button.active {
   background: #B43C52;
   border: 1px solid #B43C52;
 }

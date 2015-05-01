@@ -17,11 +17,9 @@ $(function() {
         }
     });
 
-    $("#ToDo").on("click", ".completion-button", closeItem);
+    $("#ToDo").on("click", ".completion-button", closeItem).on("click", ".delete-button", deleteItem);
 
-    $("#Complete").on("click", ".completion-button", openItem);
-
-    $(".list").on("click", ".delete-button", deleteItem);
+    $("#Complete").on("click", ".completion-button", openItem).on("click", ".delete-button", deleteItem);
 });
 
 /**

@@ -8,6 +8,8 @@
  * I'm using this to bind my functionality to initial elements on the screen.
  */
 $(function() {
+    loadItems();
+
     $(".add-button").on("click", createNewItem);
 
     $('#todo-input').keypress(function (e) {
@@ -67,7 +69,10 @@ function openItem() {
 }
 
 function deleteItem() {
-    $(this).parent().parent().remove();
+    var item = $(this).parent();
 
-    //$(this).parent().children('span').remove(); // Removes the spans but leaves the text.
+    // Removes the spans but leaves the text.
+    item.children('span').remove();
+
+    item.parent().remove();
 }

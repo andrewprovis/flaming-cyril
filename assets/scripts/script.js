@@ -25,13 +25,15 @@ $(function() {
 });
 
 /**
- * Adds item to the In Progress list from the input field at the top. Will only add an item if there is one to enter.
- * @param event
+ * Loads items from local storage and displays them..
  */
 function loadItems() {
 
 }
 
+/**
+ * Adds item to the In Progress list from the input field at the top. Will only add an item if there is one to enter.
+ */
 function createNewItem() {
     // Checks of there is any text in the input and if not then the function will exit.
     if (document.getElementsByName('todo-input')[0].value === '') {

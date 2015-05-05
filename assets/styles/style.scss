@@ -120,6 +120,21 @@ li:hover {
   background: orange;
 }
 
+.edit-button {
+  display: inline-block;
+  border: 1px solid green;
+  border-radius: 0.35rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  float: right;
+  transition: all .3s ease;
+  margin-right: 1rem;
+}
+
+.edit-button:hover {
+  background: green;
+}
+
 #Complete li {
   color: #778899;
   text-decoration: line-through;
